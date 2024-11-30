@@ -77,9 +77,11 @@ build_model_run <- function(project_path, run_path, n_thread, os, swat_vers, qui
       .[grepl(".exe$",.)]
 
   } else if(os == "unix") {
-    swat_exe <- system("find"%&&%project_path%&&%"-executable -type f",
-                        intern = T) %>%
-      basename(.)
+  swat_exe <- system(paste("find", project_path, "-type f -executable"), intern = TRUE) %>%
+    .[grepl("swatplus-61\\.0\\.[0-9]+.*-ifx-lin_x86_64-Rel", .)] %>%
+    basename()
+}
+
   }
 
   # Make sure that there is exactly one executable in the SWAT project folder
