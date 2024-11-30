@@ -16,7 +16,7 @@ You can install the `SWATrunR` from the package's GitHub repository:
 # If the package remotes is not installed run first:
 install.packages("remotes")
 
-remotes::install_github("chrisschuerz/SWATrunR")
+remotes::install_github("AimenSattar/SWATrunR")
 ```
 
 `SWATrunR` will be constantly updated and new features will find their way into the `R` package from time to time. Any updates and fixed issues are documented in the [Changelog](https://chrisschuerz.github.io/SWATrunR/news/index.html). Bugs and open issues are documented in the `R` package's [issue section](https://github.com/chrisschuerz/SWATrunR/issues). If you encounter any issues, or want to suggest any new features I encourage you to do so there. Please also check the [closed issues](https://github.com/chrisschuerz/SWATrunR/issues?q=is%3Aissue+is%3Aclosed) to see if your question is related to anything that was already solved before.
