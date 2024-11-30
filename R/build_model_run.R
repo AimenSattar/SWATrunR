@@ -79,7 +79,7 @@ build_model_run <- function(project_path, run_path, n_thread, os, swat_vers, qui
   } else if(os == "unix") {
             swat_exe <- system(paste("find", project_path, "-type f -executable"), intern = TRUE) %>%
             .[grepl("swatplus-61\\.0\\.[0-9]+.*-ifx-lin_x86_64-Rel", .)] %>%
-            basename()
+            basename(.)
 }
 
   }
